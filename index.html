@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігри</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="mb-3">Гра</h1>
+                <p class="text-muted">Оберіть гру</p>
+            </div>
+        </div>
+		
+        <div class="row g-4" id="labsContainer">
+            <!-- Картки з'являться тут -->
+        </div>
+    </div>
+	
+    <div class="modal fade" id="linkModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Перехід</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Перейти до гри?</p>
+                    <div class="alert alert-info">
+                        <strong>Посилання:</strong> 
+                        <span id="modalLink" class="text-break"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                    <a href="#" class="btn btn-primary" id="confirmLink">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

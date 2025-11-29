@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.lab-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border-radius: 15px;
+}
+
+.lab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: #e9ecef;
+    color: #495057;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin: 0.1rem;
+}
+
+.bg-lab-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.bg-lab-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.bg-lab-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.bg-lab-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
